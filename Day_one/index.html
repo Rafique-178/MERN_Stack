@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        th,td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" style="border-collapse: collapse; text-align: center;">
+        <caption>
+            <h1>Employee Salary Shit</h1>
+        </caption>
+        <thead>
+            <th colspan="2" >Name and Title</th>
+            <th>Number of Employee</th>
+            <th>Salary</th>
+            <th>Total Salary</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nahid Khan</td>
+                <td>Data Scientist</td>
+                <td>5</td>
+                <td>5000</td>
+                <td rowspan="2">43000</td>
+            </tr>
+            <tr>
+                <td>Faysal Khan</td>
+                <td>Developer</td>
+                <td>6</td>
+                <td>3000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="2"> Total Employee </td>
+            <td>11</td>
+            <td colspan="2"></td>
+        </tfoot>
+    </table>
+    <br><br>
+    <form action="#" method="POST">
+        <fieldset style="width: 520px;">
+            <label for="email">Email</label><br>
+            <input id="email" type="email" placeholder="Enter Email"> <br><br>
+            <label for="pass">Password</label><br>
+            <input id="pass" type="email" placeholder="Enter Password">
+            <br>
+            <p>Gender</p>
+            <input type="radio"id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br>
+            <p>Skills</p>
+            <input type="checkbox" name="HTML" id="HTML">
+            <label for="HTML">HTML</label><br>
+            <input type="checkbox" name="css" id="css">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" name="js" id="js">
+            <label for="js">JS</label>
+            <br><br>
+            <input type="button" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>
