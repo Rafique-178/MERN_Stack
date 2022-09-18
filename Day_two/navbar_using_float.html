@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: gray;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+        nav{
+            width:50%;
+            margin:0 auto;
+            background-color: #f1f1f1;
+            overflow: auto;
+            padding: 10px;
+        }
+        div{
+            float:left;
+        }
+        img {
+            width: 100px;
+            height: 58px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        ul{
+            margin:0;
+            padding:0;
+            float:right;
+        }
+        li{
+            list-style:none;
+            display:inline;
+        }
+        a{
+            color:black;
+            text-decoration:none;
+            float:left;
+            padding:20px;
+            margin-top: 5px;
+        }
+        .nav2 {
+            float: right;
+        }
+        input {
+            background-color: blueviolet;
+            color: white;
+            font-size: 20px;
+            width: 100px;
+            height: 50px;
+            float: right;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .mainMenu {
+            width: 100%;
+            overflow: auto;
+        }
+        .meddle {
+            float: left;
+        }
+        .menu {
+            width: calc(100% / 3);
+        }
+        .right {
+            float: right;
+        }
+        .left {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <!-- <a href="#">Logo</a> -->
+            <img src="../images/logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <nav>
+        <div>
+            <!-- <a href="#">Logo</a> -->
+            <img src="../images/logo.png" alt="Logo">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav2">
+            <input class="btn" type="button" value="Sign In">
+        </div>
+    </nav>
+    <br><br>
+    <nav>
+        <div class="nav2">
+            <!-- <a href="#">Logo</a> -->
+            <img src="../images/logo.png" alt="Logo">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <input class="btn" type="button" value="Sign In">
+        </div>
+    </nav>
+    <br><br>
+    <nav>
+        <div class="mainMenu">
+            <div class="menu">
+                <!-- <a href="#">Logo</a> -->
+                <img src="../images/logo.png" alt="Logo">
+            </div>
+            <ul class="menu meddle">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu">
+                <input class="btn" type="button" value="Sign In">
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <nav>
+        <div class="mainMenu">
+            <div class="menu right">
+                <!-- <a href="#">Logo</a> -->
+                <img class="right" src="../images/logo.png" alt="Logo">
+            </div>
+            <ul class="menu meddle">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu left">
+                <input class="btn" type="button" value="Sign In">
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
